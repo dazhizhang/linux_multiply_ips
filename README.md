@@ -14,4 +14,21 @@ sudo ifconfig eth1:1 ip netmask 掩码 <br>
 这个方法在unbuntu重启后不能保存，centos重启后可以保存 <br>
 用 ip addr  查看网络ip设置情况 <br>
 
+# 方法三
+有人用这样的方法 <br>
+iface eth0 inet static<br>
+address 192.168.1.1<br>
+netmask 255.255.255.0<br>
+gateway 192.168.1.254<br>
+
+iface eth0:0 inet static<br>
+address 192.168.1.2<br>
+netmask 255.255.255.0<br>
+gateway 192.168.1.254<br>
+
+iface eth0:1 inet static<br>
+address 192.168.1.3<br>
+netmask 255.255.255.0<br>
+gateway 192.168.1.254<br>
+
 
