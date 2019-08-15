@@ -6,7 +6,9 @@ https://www.laozuo.org/12736.html
 # 方法一：
 切换到root用户，编辑 /etc/network/interfaces <br>
 照着eth0的样式添加。 <br>
-同一网卡就是eth0:1的格式 <br>
+同一网卡就是eth0:0的格式 <br>
+实测中多ip需要有eth0:0 <br>
+不能直接跳到eth0:1 <br>
 
 # 方法二
 命令行法 <br>
